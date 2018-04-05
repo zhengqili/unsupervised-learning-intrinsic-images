@@ -37,9 +37,9 @@ Please see https://github.com/seanbell/intrinsic for detail.
 
 #### Training on the BigTime dataset:
 * Download the BigTime dataset from our website: http://landmark.cs.cornell.edu/projects/bigtime/BigTime_v1.tar.gz 
-* Changing path variable "saw_root" to the path of SAW dataset. Changing path variable "IIW_root" to the path of IIW dataset. Changing path variable "train_root" to the path of BigTime.
+* Change path variable "saw_root" to the path of SAW dataset. Change path variable "IIW_root" to the path of IIW dataset. Change path variable "train_root" to the path of BigTime.
 * build C++ code in "data/krahenbuhl2013/"
-* Changing to "self.isTrain = True" in python file "/options/train_options.py", and run:
+* Change to "self.isTrain = True" in python file "/options/train_options.py", and run:
 ```bash
     python train.py
 ```
