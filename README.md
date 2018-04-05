@@ -1,7 +1,7 @@
-learn-reflectance
+Learning Intrinsic Image Decomposition from Watching the World
 ===========================
 
-implements the intrinsic image decomposition algorithm described in "Learning Intrinsic Image Decomposition from Watching the World, Z. Li and N. Snavely, CVPR 2018". The code is based on "https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix". If you use our code for academic purposes, please consider citing:
+This is an implementation of the intrinsic image decomposition algorithm described in "Learning Intrinsic Image Decomposition from Watching the World, Z. Li and N. Snavely, CVPR 2018". The code skeleton is based on "https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix". If you use our code for academic purposes, please consider citing:
 
 @inProceedings{BigTimeLi18,
   title={Learning Intrinsic Image Decomposition from Watching the World},
@@ -12,7 +12,7 @@ implements the intrinsic image decomposition algorithm described in "Learning In
 
 
 #### Dependencies & Compilation:
-* The code was written in Pytorch and Python 2 version, but it should be easy to adapt it to Python 3 version needed.
+* The code was written in Pytorch and Python 2, but it should be easy to adapt it to Python 3 version if needed.
 * The sparse matrix construction for spatial-temporal densely connected smoothness term is based on the modifed code from https://github.com/seanbell/intrinsic. In particular, Before trainning the networks, you need to build the C++ code in "data/krahenbuhl2013/". If on Ubuntu and you have installed Eigen3 to its default directory (/usr/include/eigen3), then you can build the C++ code with:
     cd krahenbuhl2013/
     make
