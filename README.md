@@ -29,7 +29,7 @@ Please see https://github.com/seanbell/intrinsic for detail.
     python test_saw.py
 
 
-#### Trainning on the BigTime dataset:
+#### Training on the BigTime dataset:
 * Download the BigTime dataset from our website: http://landmark.cs.cornell.edu/projects/bigtime/BigTime_v1.tar.gz 
 * Change path variable "saw_root" to the path of SAW dataset; Change path variable "IIW_root" to the path of IIW dataset; Chnage path variable "train_root" to the path of BigTime.
 * build C++ code in "data/krahenbuhl2013/"
