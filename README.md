@@ -14,8 +14,10 @@ This is an implementation of the intrinsic image decomposition algorithm describ
 #### Dependencies & Compilation:
 * The code was written in Pytorch and Python 2, but it should be easy to adapt it to Python 3 version if needed.
 * The sparse matrix construction for spatial-temporal densely connected smoothness term is based on the modifed code from https://github.com/seanbell/intrinsic. In particular, you need to build C++ code in "data/krahenbuhl2013/" before trainning the networks. On Ubuntu 16.04 you need to install Eigen3 to its default directory (/usr/include/eigen3), then you can build the C++ code with:
+```bash
     cd krahenbuhl2013/
     make
+```
 
 Please see https://github.com/seanbell/intrinsic for detail.
 
@@ -24,9 +26,13 @@ Please see https://github.com/seanbell/intrinsic for detail.
 * Download pretrained model from http://landmark.cs.cornell.edu/projects/bigtime/paper_final_net_G.pth and put it in "checkpoints/test_local/paper_final_net_G.pth"
 * Change to "self.isTrain = False" in python file "/options/train_options.py"
 * To run evaluation on IIW test split, in main direcotry, change the path variable "full_root" the path of IIW dataset in "test_iiw.py" and run:
+```bash
     python test_iiw.py
+```
 * To run evaluation on SAW test split, in main direcotry, change the path variable "saw_root" to the path of SAW dataset in "test_saw.py" and run:
+```bash
     python test_saw.py
+```
 
 
 #### Training on the BigTime dataset:
@@ -34,6 +40,7 @@ Please see https://github.com/seanbell/intrinsic for detail.
 * Changing path variable "saw_root" to the path of SAW dataset. Changing path variable "IIW_root" to the path of IIW dataset. Changing path variable "train_root" to the path of BigTime.
 * build C++ code in "data/krahenbuhl2013/"
 * Changing to "self.isTrain = True" in python file "/options/train_options.py", and run:
+```bash
     python train.py
-
+```
  
