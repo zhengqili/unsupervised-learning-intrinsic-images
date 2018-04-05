@@ -21,7 +21,7 @@ Please see https://github.com/seanbell/intrinsic for detail.
 
 #### Evaluation on the IIW/SAW test splits:
 * Download IIW and SAW datasets from http://opensurfaces.cs.cornell.edu/publications/intrinsic/#download and https://github.com/kovibalu/saw_release.
-* Download pretrained model from and put it in "checkpoints/test_local/paper_final_net_G.pth"
+* Download pretrained model from http://landmark.cs.cornell.edu/projects/bigtime/paper_final_net_G.pth and put it in "checkpoints/test_local/paper_final_net_G.pth"
 * Change to "self.isTrain = False" in python file "/options/train_options.py"
 * To run evaluation on IIW test split, in main direcotry, change the path variable "full_root" the path of IIW dataset in "test_iiw.py" and run:
     python test_iiw.py
