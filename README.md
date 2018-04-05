@@ -13,11 +13,11 @@ This is an implementation of the intrinsic image decomposition algorithm describ
 
 #### Dependencies & Compilation:
 * The code was written in Pytorch and Python 2, but it should be easy to adapt it to Python 3 version if needed.
-* The sparse matrix construction for spatial-temporal densely connected smoothness term is based on the modifed code from https://github.com/seanbell/intrinsic. In particular, Before trainning the networks, you need to build the C++ code in "data/krahenbuhl2013/". If on Ubuntu and you have installed Eigen3 to its default directory (/usr/include/eigen3), then you can build the C++ code with:
+* The sparse matrix construction for spatial-temporal densely connected smoothness term is based on the modifed code from https://github.com/seanbell/intrinsic. In particular, you need to build C++ code in "data/krahenbuhl2013/" before trainning the networks. On Ubuntu 16.04 you need to install Eigen3 to its default directory (/usr/include/eigen3), then you can build the C++ code with:
     cd krahenbuhl2013/
     make
 
-Please see https://github.com/seanbell/intrinsic for detail of code dependencies.
+Please see https://github.com/seanbell/intrinsic for detail.
 
 #### Evaluation on the IIW/SAW test splits:
 * Download IIW and SAW datasets from http://opensurfaces.cs.cornell.edu/publications/intrinsic/#download and https://github.com/kovibalu/saw_release.
