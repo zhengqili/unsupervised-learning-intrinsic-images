@@ -6,7 +6,7 @@ This is an implementation of the intrinsic image decomposition algorithm describ
     @inproceedings{BigTimeLi18,
 	  	title={Learning Intrinsic Image Decomposition from Watching the World},
 	  	author={Zhengqi Li and Noah Snavely},
-	  	booktitle={Proceedings of the IEEE International Conference on Computer Vision},
+	  	booktitle={Computer Vision and Pattern Recognition (CVPR)},
 	  	year={2018}
 	}
 
@@ -31,9 +31,9 @@ Please see https://github.com/seanbell/intrinsic for detail.
 
 #### Training on the BigTime dataset:
 * Download the BigTime dataset from our website: http://landmark.cs.cornell.edu/projects/bigtime/BigTime_v1.tar.gz 
-* Change path variable "saw_root" to the path of SAW dataset; Change path variable "IIW_root" to the path of IIW dataset; Chnage path variable "train_root" to the path of BigTime.
+* Changing path variable "saw_root" to the path of SAW dataset. Changing path variable "IIW_root" to the path of IIW dataset. Changing path variable "train_root" to the path of BigTime.
 * build C++ code in "data/krahenbuhl2013/"
-* Change to "self.isTrain = True" in python file "/options/train_options.py", and run:
+* Changing to "self.isTrain = True" in python file "/options/train_options.py", and run:
     python train.py
 
  
