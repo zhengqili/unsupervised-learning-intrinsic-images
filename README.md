@@ -3,12 +3,12 @@ Learning Intrinsic Image Decomposition from Watching the World
 
 This is an implementation of the intrinsic image decomposition algorithm described in "Learning Intrinsic Image Decomposition from Watching the World, Z. Li and N. Snavely, CVPR 2018". The code skeleton is based on "https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix". If you use our code for academic purposes, please consider citing:
 
-@inProceedings{BigTimeLi18,
-  title={Learning Intrinsic Image Decomposition from Watching the World},
-  author={Zhengqi Li and Noah Snavely},e c
-  booktitle={Computer Vision and Pattern Recognition (CVPR)},
-  year={2018}
-}
+    @inproceedings{BigTimeLi18,
+	  	title={Learning Intrinsic Image Decomposition from Watching the World},
+	  	author={Zhengqi Li and Noah Snavely},
+	  	booktitle={Proceedings of the IEEE International Conference on Computer Vision},
+	  	year={2018}
+	}
 
 
 #### Dependencies & Compilation:
