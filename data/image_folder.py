@@ -185,10 +185,10 @@ class ImageFolder(data.Dataset):
         local_intensity_profiles[3] = np.zeros( (num_imgs, num_channel, input_height/8-self.half_window*2, input_width/8-self.half_window*2) )
 
         # random permutation 
-        random_image_list = np.random.permutation(num_imgs)
+        #random_image_list = np.random.permutation(num_imgs)
 
         # for each image in the sequence 
-        for i in random_image_list:
+        for i in range(num_imgs):
             
             img_name = path_list[i].split('/')[-1]
             img_path = self.root + str(folder_id) + "/data/" + img_name
