@@ -9,4 +9,5 @@ class TestOptions(BaseOptions):
         self.parser.add_argument('--phase', type=str, default='test', help='train, val, test, etc')
         self.parser.add_argument('--which_epoch', type=str, default='latest', help='which epoch to load? set to latest to use latest cached model')
         self.parser.add_argument('--how_many', type=int, default=50, help='how many test images to run')
+        self.parser.add_argument('--lr', type=float, default=0.0005, help='initial learning rate for adam')
         self.isTrain = False
