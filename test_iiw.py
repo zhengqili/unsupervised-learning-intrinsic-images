@@ -3,7 +3,7 @@ import torch
 import numpy as np
 from options.train_options import TrainOptions
 import sys, traceback
-opt = TrainOptions().parse()  # set CUDA_VISIBLE_DEVICES before import torch
+opt = TestOptions().parse()  # set CUDA_VISIBLE_DEVICES before import torch
 from models.models import create_model
 from data.data_loader import CreateDataLoaderIIWTest
 
