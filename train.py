@@ -42,7 +42,7 @@ def validation_iiw(model, list_name):
 
     model.switch_to_eval()
 
-    for j in range(0,3):
+    for j in range(0,1):
         print("============================= Validation IIW MODE ============================", j)
 
         data_loader_IIW_TEST = CreateDataLoaderIIWTest(IIW_root, IIW_test_list_dir, j)
