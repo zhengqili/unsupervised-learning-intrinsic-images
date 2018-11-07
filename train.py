@@ -42,7 +42,7 @@ def validation_iiw(model, list_name):
 
     model.switch_to_eval()
 
-    for j in range(0,1):
+    for j in range(2,3):
         print("============================= Validation IIW MODE ============================", j)
 
         data_loader_IIW_TEST = CreateDataLoaderIIWTest(IIW_root, IIW_test_list_dir, j)
@@ -107,23 +107,6 @@ for epoch in range(0, 24):
         model.set_input(stacked_img, targets)
         model.optimize_parameters(epoch, data_set_name)
 
-        # for each interval, do validation
-        count += 1
-        if count % num_iterations == 0:
-            current_whdr = validation_iiw(model, 'test_list/')
-            cuurent_AP = validation_SAW(model)
-
-            print("Current WHDR %f"%(current_whdr) )
-            print("Current AP %f"%(cuurent_AP))
-
-            current_score = (1.0- cuurent_AP +  current_whdr)/2.0
-
-            if current_score < best_loss:
-                best_WHDR = current_whdr
-                best_AP = cuurent_AP
-                best_loss = current_score
-                best_epoch = epoch
-                model.save('best_full_TL')
 
     print("================== SAVE AT CURRENT EPOCHS =============================")
     model.save('full_latest')
