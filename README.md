@@ -21,6 +21,23 @@ This is an implementation of the intrinsic image decomposition algorithm describ
 
 Please see https://github.com/seanbell/intrinsic for detail.
 
+#### UPDATES: EASY WAY to get predictions/evaluations on the IIW/SAW test sets:
+Now we provide precomputed predictions on IIW test set and SAW test set.
+* You need to download precomputed predictions for IIW test set in hdf5 format in http://www.cs.cornell.edu/projects/megadepth/dataset/bigtime/bigtime_iiw.zip
+* To get evalution results on IIW test set, download IIW dataset and run
+```bash
+    python compute_iiw_whdr.py
+```
+(you might need to change judgement_path in this python script to fit to your IIW data path)
+* You need to download precomputed predictions for SAW test set in hdf5 format in 
+http://www.cs.cornell.edu/projects/megadepth/dataset/bigtime/bigtime_saw.zip
+* To get evalution results on SAW test set, download SAW dataset and run
+```bash
+    python compute_saw_ap.py
+```
+You need modify 'full_root' in this script and to point to the SAW directory you download. To evlaute on AP% described in the paper, set 'mode = 0' in compute_saw_ap.py.
+
+
 #### Evaluation on the IIW/SAW test splits:
 * Download IIW and SAW datasets from http://opensurfaces.cs.cornell.edu/publications/intrinsic/#download and https://github.com/kovibalu/saw_release.
 * Download pretrained model from http://landmark.cs.cornell.edu/projects/bigtime/paper_final_net_G.pth and put it in "checkpoints/test_local/paper_final_net_G.pth"
