@@ -52,14 +52,4 @@ You need modify 'full_root' in this script and to point to the SAW directory you
 ```bash
     python test_saw.py
 ```
-
-
-#### Training on the BigTime dataset:
-* Download the BigTime dataset from our website: http://landmark.cs.cornell.edu/projects/bigtime/BigTime_v1.tar.gz 
-* Change path variable "saw_root" to the path of SAW dataset. Change path variable "IIW_root" to the path of IIW dataset. Change path variable "train_root" to the path of BigTime.
-* build C++ code in "data/krahenbuhl2013/"
-* Change to "self.isTrain = True" in python file "/options/train_options.py", and run:
-```bash
-    python train.py
-```
  
